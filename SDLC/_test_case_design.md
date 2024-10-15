@@ -60,3 +60,13 @@
 | **Accessibility - TC-02**         | Verify that all images have descriptive alt text for screen readers.       | Screen reader announces images correctly with their descriptions.                               |               |           |
 | **Accessibility - TC-03**         | Verify that color contrast meets accessibility standards.                  | All text elements meet or exceed the required contrast ratio for readability.                   |               |           |
 
+
+## Browser Testing with BrowserStack
+
+| Test ID                          | Objective                                                                 | Expected Result                                                                                 | Actual Result | Pass/Fail |
+|-----------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------|-----------|
+| **Browser Testing - TC-01**       | Verify website functionality on Chrome.                                   | All features work correctly and are visually accurate on the Chrome browser.                    |               |           |
+| **Browser Testing - TC-02**       | Verify website functionality on Firefox.                                  | All features work correctly and are visually accurate on the Firefox browser.                   |               |           |
+| **Browser Testing - TC-03**       | Verify website functionality on Safari.                                   | All features work correctly and are visually accurate on the Safari browser.                    |               |           |
+| **Browser Testing - TC-04**       | Verify website functionality on Edge.                                     | All features work correctly and are visually accurate on the Edge browser.                      |               |           |
+| **Browser Testing - TC-05**       | Verify website responsiveness on mobile devices using BrowserStack.       | The website is fully functional and visually accurate on various mobile devices.                 |               |           |

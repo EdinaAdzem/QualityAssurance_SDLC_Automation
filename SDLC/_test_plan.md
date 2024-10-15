@@ -8,7 +8,7 @@ The objective of the Grocery Mate Webshop is to enhance the existing grocery sho
 
 ### Scope of Testing
 - **In Scope:**  
-  Registration, product search, shopping cart, checkout process, payment integration.
+  Registration, product search, shopping cart, checkout process, payment integration, and browser compatibility testing.
 - **Out of Scope:**  
   Performance and security testing, which will be handled separately.
 
@@ -17,6 +17,8 @@ The objective of the Grocery Mate Webshop is to enhance the existing grocery sho
 - Usability Testing
 - Regression Testing
 - Security Testing
+- **Browser Testing**  
+  This will involve verifying the functionality and usability of the webshop across different web browsers and devices.
 
 ### Risks and Issues
 - **Risk:**  
@@ -28,6 +30,7 @@ The objective of the Grocery Mate Webshop is to enhance the existing grocery sho
 - Verify all new features function as intended.
 - Ensure the checkout and payment process is seamless.
 - Validate user interactions, including registration, cart management, and product search.
+- Confirm that the webshop functions correctly on multiple browsers and devices.
 
 ## 4. Test Criteria
 
@@ -43,7 +46,7 @@ The objective of the Grocery Mate Webshop is to enhance the existing grocery sho
 ## 5. Resource Planning
 - **QA Team:** Test Engineers, Automation Engineers, Test Manager.
 - **Hardware:** Workstations, test mobile devices.
-- **Software:** Web browsers (Chrome, Firefox), mobile operating systems (iOS, Android).
+- **Software:** Web browsers (Chrome, Firefox, Safari, Edge), mobile operating systems (iOS, Android).
 
 ## 6. Test Environment
 **Test Environments:**  
@@ -55,6 +58,7 @@ Development, Test, and Production environments will be used for testing. Real de
 | Test Planning       | 01/10/2024   | 05/10/2024   | Test Manager | 20 hours         |
 | Test Case Design    | 06/10/2024   | 15/10/2024   | QA Team      | 40 hours         |
 | Functional Testing  | 16/10/2024   | 25/10/2024   | QA Team      | 60 hours         |
+| Browser Testing     | 26/10/2024   | 30/10/2024   | QA Team      | 30 hours         |
 
 ## 8. Test Deliverables
 - Test Plan Document
@@ -65,4 +69,3 @@ Development, Test, and Production environments will be used for testing. Real de
 
 ## 9. Approval
 Sign-off will be required from QA Lead, stakeholders, and the project management team before the release can be made live.
-
