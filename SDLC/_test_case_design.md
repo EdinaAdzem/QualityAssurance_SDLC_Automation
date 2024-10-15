@@ -69,4 +69,33 @@
 | **Browser Testing - TC-02**       | Verify website functionality on Firefox.                                  | All features work correctly and are visually accurate on the Firefox browser.                   |               |           |
 | **Browser Testing - TC-03**       | Verify website functionality on Safari.                                   | All features work correctly and are visually accurate on the Safari browser.                    |               |           |
 | **Browser Testing - TC-04**       | Verify website functionality on Edge.                                     | All features work correctly and are visually accurate on the Edge browser.                      |               |           |
-| **Browser Testing - TC-05**       | Verify website responsiveness on mobile devices using BrowserStack.       | The website is fully functional and visually accurate on various mobile devices.                 |               |           |
+| **Browser Testing - TC-05**       | Verify website responsiveness on mobile devices using BrowserStack.       | The website is fully functional and visually accurate on various mobile devices.                 |               |           |        
+
+
+### Boundary Value and State Transition Tests
+
+#### Boundary Value Tests
+
+| Test ID                          | Objective                                                                 | Expected Result                                                                                 | Actual Result | Pass/Fail |
+|-----------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------|-----------|
+| **Boundary Value - TC-01**       | Verify that registration fails when entering a username with less than 3 characters.| An error message is displayed indicating that the username must be at least 3 characters long. |               |           |
+| **Boundary Value - TC-02**       | Verify that registration fails when entering a password shorter than 6 characters.| An error message is displayed indicating that the password must be at least 6 characters long. |               |           |
+| **Boundary Value - TC-03**       | Verify product search returns results with maximum allowed characters.| The system displays products matching the search criteria when searching with the maximum character limit. |               |           |
+| **Boundary Value - TC-04**       | Verify product search returns no results with zero characters.| The system shows an error message when the search bar is empty. |               |           |
+
+#### State Transition Tests
+
+| Test ID                          | Objective                                                                 | Expected Result                                                                                 | Actual Result | Pass/Fail |
+|-----------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------|-----------|
+| **State Transition - TC-01**      | Verify user registration process transitions from "unregistered" to "registered". | The user successfully registers and is transitioned to the registered state.                    |               |           |
+| **State Transition - TC-02**      | Verify payment transitions from "pending" to "completed" upon successful transaction.| The payment status updates to "completed" after a successful transaction.                       |               |           |
+| **State Transition - TC-03**      | Verify payment transitions from "pending" to "failed" upon unsuccessful transaction.| The payment status updates to "failed" after an unsuccessful transaction.                        |               |           |
+
+## Browser Testing with BrowserStack
+
+| Test ID                          | Objective                                                                 | Expected Result                                                                                 | Actual Result | Pass/Fail |
+|-----------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------|-----------|
+| **Browser Testing - TC-01**       | Verify website functionality on Chrome.                                   | All features work correctly and are visually accurate on the Chrome browser.                    |               |           |
+| **Browser Testing - TC-02**       | Verify website functionality on Firefox.                                  | All features work correctly and are visually accurate on the Firefox browser.                   |               |           |
+| **Browser Testing - TC-03**       | Verify website functionality on Safari.                                   | All features work correctly and are visually accurate on the Safari browser.                    |               |           |
+| **Browser Testing - TC-04**       | Verify website functionality on Edge.                                    
