@@ -15,19 +15,21 @@ The purpose of this test report is to evaluate the quality and stability of the 
 - User Interface
 - Accessibility Compliance
 
-## 2. Test Summary
+| Test Suite             | Total Tests | Comments                              |
+|------------------------|-------------|---------------------------------------|
+| User Registration       | 2           | Registration works as expected.       |
+| Product Search          | 2           | Search functionality verified.        |
+| Shopping Cart           | 2           | Issue with item removal found.       |
+| Checkout Process        | 1           | Checkout successful.                  |
+| Payment Gateway         | 2           | Payment processed successfully.       |
+| Backend Verification     | 3           | Data integrity verified.              |
+| User Functions          | 1           | Password reset verified.              |
+| User Interface          | 1           | All links are functional.             |
+| Accessibility           | 3           | Color contrast issue found.           |
+| Boundary Testing        | 3           | Boundary conditions validated.        |
+| State Transition Testing | 3           | State transitions verified.           |
+| Browser Testing         | 5           | Functionality across browsers verified.|
 
-| Test Suite            | Total Tests | Comments                       |
-|-----------------------|-------------|--------------------------------|
-| User Registration      | 2           | Registration works as expected. |
-| Product Search         | 2           | Search functionality verified.  |
-| Shopping Cart          | 2           | Issue with item removal found.  |
-| Checkout Process       | 1           | Checkout successful.            |
-| Payment Gateway        | 2           | Payment processed successfully. |
-| Backend Verification   | 3           | Data integrity verified.         |
-| User Functions         | 1           | Password reset verified.         |
-| User Interface         | 1           | All links are functional.        |
-| Accessibility          | 3           | Color contrast issue found.     |
 
 ## 3. Detailed Test Results
 
