@@ -93,6 +93,23 @@ The purpose of this test report is to evaluate the quality and stability of the 
 | Accessibility - TC-02  | Verify that all images have descriptive alt text for screen readers.| Screen reader reads images correctly.                       | Alt text provided correctly.         |
 | Accessibility - TC-03  | Verify that color contrast meets accessibility standards.           | All text meets required contrast ratio for readability.      | Minor contrast issues found.         |
 
+## 4. Boundary and State Transition Testing
+
+### 4.1 Boundary Testing
+
+| Test ID               | Objective                                                           | Expected Result                                             | Actual Result                        |
+|-----------------------|---------------------------------------------------------------------|-------------------------------------------------------------|--------------------------------------|
+| Boundary - TC-01      | Verify that the user cannot register with a username shorter than 3 characters. | Error message displayed for username too short.            | As expected.                         |
+| Boundary - TC-02      | Verify that the user cannot register with a username longer than 20 characters. | Error message displayed for username too long.             | As expected.                         |
+| Boundary - TC-03      | Verify that the shopping cart accepts a maximum of 50 items.       | Error message displayed when trying to add more than 50 items. | As expected.                         |
+
+### 4.2 State Transition Testing
+
+| Test ID               | Objective                                                           | Expected Result                                             | Actual Result                        |
+|-----------------------|---------------------------------------------------------------------|-------------------------------------------------------------|--------------------------------------|
+| State Transition - TC-01 | Verify that the user can transition from "Logged Out" to "Logged In" after successful login. | User is redirected to the dashboard.                        | As expected.                         |
+| State Transition - TC-02 | Verify that the user can transition from "Shopping Cart" to "Checkout" after clicking the checkout button. | User is redirected to the payment page.                    | As expected.                         |
+| State Transition - TC-03 | Verify that the order status changes from "Pending" to "Completed" after payment is successful. | Order status updated correctly in order history.           | As expected.                         |
 
 ## Browser Testing with BrowserStack
 
@@ -103,7 +120,6 @@ The purpose of this test report is to evaluate the quality and stability of the 
 | **Browser Testing - TC-03**       | Verify website functionality on Safari.                                   | All features work correctly and are visually accurate on the Safari browser.                    |               |           |
 | **Browser Testing - TC-04**       | Verify website functionality on Edge.                                     | All features work correctly and are visually accurate on the Edge browser.                      |               |           |
 | **Browser Testing - TC-05**       | Verify website responsiveness on mobile devices using BrowserStack.       | The website is fully functional and visually accurate on various mobile devices.                 |               |           |
-# Test Reporting for Grocery Mate Webshop
 
 ## Test Case Summary
 
@@ -113,48 +129,35 @@ The purpose of this test report is to evaluate the quality and stability of the 
 | User Registration - TC-02     | Verify that registration fails with an already existing username.        | An error message is displayed indicating that the username already exists.            |               |
 | Product Search - TC-01       | Verify that users can search for products using the search bar.         | The system displays a list of products matching the search criteria.                   |               |
 | Product Search - TC-02       | Verify that the system shows an error message for invalid product searches.| An error message is displayed indicating that no products were found.                  |               |
-| Shopping Cart - TC-01        | Verify that users can add and remove items from the shopping cart.      | The item is removed from the cart, and the cart total is updated.                     |               |
-| Shopping Cart - TC-02        | Verify that the shopping cart displays the correct total price.         | The total price matches the sum of the prices of the items in the cart.              |               |
-| Checkout - TC-01             | Verify that the user can complete the checkout process.                 | The order is successfully placed, and the user receives a confirmation message.       |               |
-| Payment - TC-01              | Verify that payments can be processed successfully.                      | Payment is processed, and the user receives a payment confirmation.                   |               |
-| Payment - TC-02              | Verify that payment processing fails with invalid credit card details.  | An error message is displayed indicating payment failure.                             |               |
-| Backend Verification - TC-01  | Verify that payment information is correctly stored in the database.    | The payment record exists in the database with the correct amount and user details.   |               |
-| Backend Verification - TC-02  | Verify that failed payment attempts are logged in the database.         | A record of the failed payment attempt exists with the relevant error details.        |               |
-| Backend Verification - TC-03  | Verify that the order history reflects the correct payment status.      | The order history shows the correct status (completed, failed) based on payment outcome.|               |
-| User Functions - TC-01       | Verify that users can reset their passwords successfully.               | A confirmation message is sent to the user's email for password reset.                |               |
-| User Interface - TC-01       | Verify that all links on the homepage are functional.                  | Each link navigates to the corresponding page without errors.                         |               |
-| Accessibility - TC-01        | Verify that the website is navigable using keyboard-only controls.      | All links and buttons can be accessed and selected without a mouse.                   |               |
-| Accessibility - TC-02        | Verify that all images have descriptive alt text for screen readers.    | Screen reader announces images correctly with their descriptions.                      |               |
-| Accessibility - TC-03        | Verify that color contrast meets accessibility standards.                | All text elements meet or exceed the required contrast ratio for readability.         |               |
+| Shopping Cart - TC-01        | Verify that users can add and remove items from the cart.               | The item is removed, and the total is updated accordingly.                            |               |
+| Shopping Cart - TC-02        | Verify that the shopping cart displays the correct total price.         | The total price displayed matches the sum of items in the cart.                        |               |
+| Checkout - TC-01              | Verify that the user can complete the checkout process.                 | The order is placed, and a confirmation message is displayed.                          |               |
+| Payment - TC-01               | Verify that payments are processed successfully.                        | Payment is processed successfully, and a confirmation message is displayed.            |               |
+| Payment - TC-02               | Verify that payment fails with invalid credit card details.             | An error message is displayed indicating that the credit card details are invalid.     |               |
+| Backend - TC-01               | Verify payment information is stored in the database.                   | A payment record exists in the database with the correct details.                       |               |
+| Backend - TC-02               | Verify that failed payment attempts are logged in the database.         | A failed payment record exists in the database with the appropriate error details.      |               |
+| Backend - TC-03               | Verify that order history reflects the correct payment status.          | The order history displays the correct payment status.                                   |               |
+| User Functions - TC-01        | Verify that users can reset their passwords successfully.               | A confirmation message is sent to the user's email for the password reset.             |               |
+| UI - TC-01                    | Verify that all links on the homepage are functional.                   | Each link navigates to the corresponding page as expected.                             |               |
+| Accessibility - TC-01         | Verify that the site is navigable using keyboard-only controls.         | All links and buttons can be accessed without a mouse.                                 |               |
+| Accessibility - TC-02         | Verify that all images have descriptive alt text for screen readers.    | The screen reader reads the images correctly with appropriate descriptions.              |               |
+| Accessibility - TC-03         | Verify that color contrast meets accessibility standards.               | All text meets the required contrast ratio for readability.                             |               |
+| Boundary - TC-01              | Verify that the user cannot register with a username shorter than 3 characters. | An error message is displayed indicating that the username is too short.                |               |
+| Boundary - TC-02              | Verify that the user cannot register with a username longer than 20 characters. | An error message is displayed indicating that the username is too long.                 |               |
+| Boundary - TC-03              | Verify that the shopping cart accepts a maximum of 50 items.          | An error message is displayed when attempting to add more than 50 items to the cart.   |               |
+| State Transition - TC-01      | Verify that the user can transition from "Logged Out" to "Logged In" after successful login. | The user is redirected to the dashboard after logging in.                                |               |
+| State Transition - TC-02      | Verify that the user can transition from "Shopping Cart" to "Checkout". | The user is redirected to the payment page after clicking the checkout button.           |               |
+| State Transition - TC-03      | Verify that the order status changes from "Pending" to "Completed" after payment is successful. | The order status is updated correctly in the order history.                              |               |
+| Browser Testing - TC-01       | Verify website functionality on Chrome.                                 | All features work correctly and are visually accurate on the Chrome browser.            |               |
+| Browser Testing - TC-02       | Verify website functionality on Firefox.                                | All features work correctly and are visually accurate on the Firefox browser.           |               |
+| Browser Testing - TC-03       | Verify website functionality on Safari.                                 | All features work correctly and are visually accurate on the Safari browser.            |               |
+| Browser Testing - TC-04       | Verify website functionality on Edge.                                   | All features work correctly and are visually accurate on the Edge browser.              |               |
+| Browser Testing - TC-05       | Verify website responsiveness on mobile devices using BrowserStack.     | The website is fully functional and visually accurate on various mobile devices.         |               |
 
-## Test Results Summary
+## 5. Conclusion
 
-| Total Passed | Total Failed | Overall Status |
-|--------------|--------------|----------------|
-|              |              |                |
-
-## 4. Test Execution Details
-
-- **Test Executed by**: QA Team
-- **Test Execution Period**: Oct 10, 2024 - Oct 14, 2024
-- **Test Environment**: 
-  - OS: Windows 11
-  - Browser: Google Chrome Version 116.0
-  - Backend: Flask + SQLite (Test DB)
-  - Frontend: React.js (v18)  
-  - API: Stripe (for payment gateway)
-
-## 5. Defects Summary
-
-- **Shopping Cart - TC-01**: Removal of items from the cart does not work correctly; item remains in cart.
-- **Accessibility - TC-03**: Contrast ratio issues with certain text elements affecting readability for visually impaired users.
-
-## 6. Recommendations
-
-- **Shopping Cart Issue**: Investigate the logic for item removal from the cart and ensure that the cart is updated both on the frontend and backend.
-- **Accessibility Issue**: Improve color contrast for better readability in line with accessibility guidelines (WCAG 2.1).
-
----
-Prepared by: **Edina**  
-Date: Oct 14, 2024
+Overall, the Grocery Mate Webshop has passed most of the critical test cases with a few issues noted for further investigation. The following actions are recommended:
+- Resolve the shopping cart item removal issue.
+- Address the accessibility color contrast issue.
+- Perform regression testing after fixes are implemented.
 
