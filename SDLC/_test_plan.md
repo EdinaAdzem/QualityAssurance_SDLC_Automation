@@ -4,6 +4,15 @@
 **Objective:**  
 The objective of the Grocery Mate Webshop is to enhance the existing grocery shopping platform by introducing new features, ensuring seamless usability, and addressing any defects before release.
 
+**User Base:**  
+The Grocery Mate Webshop is targeted toward individuals who prefer online grocery shopping, including both occasional and regular users. The platform aims to cater to a diverse audience, including tech-savvy users and those less familiar with e-commerce platforms.
+
+**Hardware and Software:**  
+- **Hardware:**  
+  Workstations, laptops, mobile devices (iOS and Android), and tablets.  
+- **Software:**  
+  Modern web browsers (Chrome, Firefox, Safari, Edge), mobile operating systems (iOS, Android), and server-side technologies to support webshop operations.
+  
 ## 2. Test Strategy
 
 ### Scope of Testing
@@ -21,10 +30,17 @@ The objective of the Grocery Mate Webshop is to enhance the existing grocery sho
   This will involve verifying the functionality and usability of the webshop across different web browsers and devices.
 
 ### Risks and Issues
-- **Risk:**  
-  Potential delays in feature delivery.
-- **Mitigation:**  
-  Implement a buffer in the schedule.
+- **Risk 1:** Potential delays in feature delivery.  
+  **Mitigation:** Implement a buffer in the schedule.  
+- **Risk 2:** Browser compatibility issues.  
+  **Mitigation:** Conduct early and regular browser testing during development.  
+- **Risk 3:** Inadequate test coverage due to tight deadlines.  
+  **Mitigation:** Prioritize test cases based on risk and impact.  
+- **Risk 4:** Payment system failures, services outage.  
+  **Mitigation:** Perform thorough integration testing with payment gateways and ensure fallback mechanisms are in place.  
+- **Risk 5:** User acceptance delays.  
+  **Mitigation:** Engage stakeholders early and conduct frequent demos to ensure alignment.
+
 
 ## 3. Test Objectives
 - Verify all new features function as intended.
