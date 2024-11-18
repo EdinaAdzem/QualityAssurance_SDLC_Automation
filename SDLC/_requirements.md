@@ -52,3 +52,26 @@
 - **R9.1**: The system must be fully navigable using keyboard-only controls.
 - **R9.2**: All images on the website must have descriptive alt text for screen readers.
 - **R9.3**: The website must meet or exceed the required color contrast ratio for readability and accessibility compliance.
+
+
+### 10. Product Rating System
+- **R10.1**: Users must be able to rate products: The Scale of 1 to 5 stars.
+- **R10.2**: The system must calculate and display the average rating for each product based on user input.
+- **R10.3**: The system must only allow registered users to submit ratings.
+- **R10.4**: Users must be able to view all ratings for a product, including timestamps and user feedback.
+
+### 11. Age Verification for Alcoholic Products
+- **R11.1**: The system must display an age verification prompt for products marked as alcoholic.
+- **R11.2**: Users must confirm that they are at least 18 years old, before purchasing alcoholic products.
+- **R11.3**: If a user fails to verify their age, the system must prevent them from adding alcoholic products to their shopping cart.
+
+### 12. Shipping Cost Changes 
+- **R12.1**: The system must dynamically calculate shipping costs based on the weight and size of the items in the cart.
+- **R12.2**: The system must display updated shipping costs in the shopping cart whenever items are added or removed.
+- **R12.3**: The system must provide free shipping for orders that exceed a specified price threshold (e.g., €50).
+- **R12.4**: The system must allow users to choose expedited shipping at an additional cost.
+
+
+
+
+
