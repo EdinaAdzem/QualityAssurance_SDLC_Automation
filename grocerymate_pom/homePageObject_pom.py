@@ -1,3 +1,7 @@
+from telnetlib import EC
+
+from selenium.webdriver.support.wait import WebDriverWait
+
 
 class HomePage:
     def __init__(self, page: Page):

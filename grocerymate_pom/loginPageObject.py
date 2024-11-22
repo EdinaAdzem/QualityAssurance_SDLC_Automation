@@ -1,4 +1,4 @@
-from selenium weimport By
+from selenium.webdriver.common.by import By
 
 
 class LoginPage:
