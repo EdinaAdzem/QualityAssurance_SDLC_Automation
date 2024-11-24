@@ -1,44 +1,35 @@
 import pytest
+"""Execute in Pytest"""
 
-# Example: Mock or implement these functions in your test suite
+
 def get_homepage_links():
-    # Return a list of homepage links
     return ["https://grocerymate.com/home", "https://grocerymate.com/shop"]
 
 def check_link(link):
-    # Check if the link returns a 200 status
-    return True  # Simulated check
+    return True
 
 def is_keyboard_navigable():
-    # Return True if the site supports keyboard navigation
     return True
 
 def check_images_alt_text():
-    # Return True if all images have alt text
     return True
 
 def check_color_contrast():
-    # Return True if the color contrast meets accessibility standards
     return True
 
 def load_login_page():
-    # Simulate loading the login page
     return "Login page loaded successfully"
 
 def load_registration_page():
-    # Simulate loading the registration page
     return "Registration page loaded successfully"
 
 def load_product_page(product_id):
-    # Simulate loading the product page
     return "Product page loaded successfully"
 
 def load_cart_page():
-    # Simulate loading the cart page
-    return "Cart page loaded successfully"
+    return "Cart page load successfull"
 
 def get_footer_links():
-    # Return a list of footer links
     return ["https://grocerymate.com/privacy", "https://grocerymate.com/terms"]
 
 @pytest.mark.sanity
